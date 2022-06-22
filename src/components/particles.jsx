@@ -18,14 +18,14 @@ function Particle() {
         options={{
     "fullScreen": {
         "enable": true,
-        "zIndex": 1
+        "zIndex": -1
     },
     "detectRetina": true,
     "fpsLimit": 120,
     "interactivity": {
         "events": {
             "onClick": {
-                "enable": true,
+                "enable": false,
                 "mode": "push"
             },
             "onDiv": {
@@ -53,11 +53,13 @@ function Particle() {
                 "speed": 3
             },
             "connect": {
-                "distance": 800,
+                "distance": 100,
+                "color": "#fff",
                 "lineLinked": {
-                    "opacity": 0.1
+                    "color":"#fff",
+                    "opacity": 0.2
                 },
-                "radius": 180
+                "radius": 250
             },
             "grab": {
                 "distance": 400,
@@ -79,16 +81,16 @@ function Particle() {
     },
     "particles": {
         "color": {
-            "value": "#0000ff"
+            "value": "#00B97C"
         },
         "lineLinked": {
             "blink": false,
-            "color": "#ffffff",
+            "color": "#fff",
             "consent": false,
-            "distance": 150,
+            "distance": 100,
             "enable": false,
-            "opacity": 0.4,
-            "width": 1
+            "opacity": 1,
+            "width": 0.9
         },
         "move": {
             "attract": {
@@ -103,7 +105,7 @@ function Particle() {
             "enable": true,
             "outMode": "out",
             "random": false,
-            "speed": 1,
+            "speed": 0.5,
             "straight": false
         },
         "number": {
@@ -112,7 +114,7 @@ function Particle() {
                 "area": 800
             },
             "limit": 500,
-            "value": 100
+            "value": 80
         },
         "opacity": {
             "animation": {
@@ -122,7 +124,7 @@ function Particle() {
                 "sync": false
             },
             "random": false,
-            "value": 0.5
+            "value": 0.8
         },
         "shape": {
             "type": "circle"
@@ -131,11 +133,11 @@ function Particle() {
             "animation": {
                 "enable": false,
                 "minimumValue": 0.1,
-                "speed": 40,
+                "speed": 50,
                 "sync": false
             },
             "random": true,
-            "value": 5
+            "value": 3
         }
     },
     "polygon": {
@@ -145,14 +147,14 @@ function Particle() {
             "lineWidth": 0.5
         },
         "move": {
-            "radius": 5
+            "radius": 6
         },
         "scale": 1,
         "type": "none",
         "url": ""
     },
     "background": {
-        "color": "#ffffff",
+        "color": "#000",
         "image": "",
         "position": "50% 50%",
         "repeat": "no-repeat",
