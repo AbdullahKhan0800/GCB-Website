@@ -1,41 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 
 /* navigation style */
-
-.nav {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    width: 80%;
-    margin: auto;
-    height: 5vh;
-}
-
 .logoimagemav {
-    width: auto;
-    height: 5vh;
+    width: 70px;
+    height: 70px;
     align-items: center;
     display: flex;
 }
 
-.navul {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
+.navbarfullwidth {
+    position: fixed;
+    top: 0px;
+    min-width: 100% !important;
+    background-color: transparent;
     color: white;
-    margin: 0%;
+    padding: 0px;
 }
 
-.navul li {
-    padding: 0.5rem 0.85rem;
-    letter-spacing: 3.5px;
+.navbarfullresponsive {
+    position: fixed;
+    top: 0%;
+    background-color: #140960;
+    min-width: 100% !important;
+    padding: 0px;
 }
-
+.nav-link{
+    color:black !important;
+}
+.navbar-brand{
+    padding:0px;
+}
+.navbar {
+    padding: 0px;
+    margin: 0px;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
 /* header style  */
+
+
 .maindivheorseftion {
     height: 95vh;
     display: grid;
@@ -43,41 +47,37 @@
     width: min(1000px, 90%);
     margin: auto;
 }
-
-.headingherosection {
-    color: white;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 55px;
-    font-weight: bold;
-    width: min(80%, 720px);
-
+.thisiaLogoimage{
+    width:min(97%,1200px);
+    height:auto;
 }
 
 .changingtextherosection {
     color: #FDA400;
 }
 
-.three-divheorsection {
-    margin-top: 120px;
-    display: flex;
-    justify-content: space-around;
+.thishamburger {
+    display: none;
 }
 
-.three-divheorsection div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+@media screen and (max-width:777px) {
+    .thishamburger {
+        display: block;
+        color: white;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
 
-.three-divheorsection h6 {
-    color: white;
-    text-align: center;
-    font-size: 17px;
-    line-height: 30px;
-    font-weight: 700;
-    margin: 0%;
+    .navul {
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
 }
 
 /* Servisec style */

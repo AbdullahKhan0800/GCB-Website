@@ -81,7 +81,7 @@ function Particle() {
     },
     "particles": {
         "color": {
-            "value": "#00B97C"
+            "value": "#000"
         },
         "lineLinked": {
             "blink": false,
@@ -154,7 +154,7 @@ function Particle() {
         "url": ""
     },
     "background": {
-        "color": "#000",
+        "color": "#fff",
         "image": "",
         "position": "50% 50%",
         "repeat": "no-repeat",
